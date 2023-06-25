@@ -4,9 +4,9 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Root from "./routes/root.jsx";
 import ErrorPage from "./error-page";
 import Home from "./routes/home.jsx";
-import Projects from "./routes/projects.jsx";
-import AboutMe from "./routes/about-me.jsx";
-import ContactMe from "./routes/contact-me.jsx";
+import Works from "./routes/works.jsx";
+import About from "./routes/about.jsx";
+import Contact from "./routes/contact.jsx";
 
 const router = createBrowserRouter([
   {
@@ -22,16 +22,16 @@ const router = createBrowserRouter([
             element: <Home />,
           },
           {
-            path: "/projects",
-            element: <Projects />,
+            path: "/works",
+            element: <Works />,
           },
           {
-            path: "/about-me",
-            element: <AboutMe />,
+            path: "/about",
+            element: <About />,
           },
           {
-            path: "/contact-me",
-            element: <ContactMe />,
+            path: "/contact",
+            element: <Contact />,
           },
         ],
       },

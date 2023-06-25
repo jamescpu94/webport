@@ -27,18 +27,18 @@ export default function NavBarTop() {
               </NavLink>
             </li>
             <li class="nav-item">
-              <NavLink to="/projects" className="nav-link">
-                Projects
+              <NavLink to="/works" className="nav-link">
+                Works
               </NavLink>
             </li>
             <li class="nav-item">
-              <NavLink to="/contact-me" className="nav-link">
-                Contact me
+              <NavLink to="/contact" className="nav-link">
+                Contact
               </NavLink>
             </li>
             <li class="nav-item">
-              <NavLink to="/about-me" className="nav-link">
-                About me
+              <NavLink to="/about" className="nav-link">
+                About
               </NavLink>
             </li>
           </ul>
