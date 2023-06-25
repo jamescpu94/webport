@@ -13,7 +13,7 @@ export default function Root() {
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="/"
+            data-bs-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
@@ -46,7 +46,7 @@ export default function Root() {
           </div>
         </div>
       </nav>
-      <div id="detail">
+      <div id="detail" className="container">
         <Outlet />
       </div>
     </>
