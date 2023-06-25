@@ -1,8 +1,10 @@
+import PageTitle from "../components/page-title";
+
 export default function About() {
   return (
     <>
       <div>
-        <h1>AboutMe</h1>
+        <PageTitle title="About" />
       </div>
     </>
   );

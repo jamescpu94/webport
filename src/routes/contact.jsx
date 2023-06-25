@@ -1,12 +1,13 @@
+import PageTitle from "../components/page-title";
+
 export default function Contact() {
   return (
     <>
-      <div>
-        <h1>Contacts</h1>
-      </div>
-      <div class="container ">
-        <div class="row align-items-start">
+      <PageTitle title="Contact" />
+      <div class="container mt-5">
+        <div class="row">
           <div class="col-8">
+            <h2>Get in touch</h2>
             <div class="mb-3">
               <label for="inputName" class="form-label">
                 Your Name
@@ -51,7 +52,15 @@ export default function Contact() {
               Send
             </button>
           </div>
-          <div class="col">Other Network</div>
+          <div class="col">
+            <h1>Others</h1>
+            <div>
+              <i class="fa-brands fa-linkedin fa-2x"></i>
+              <i class="fa-brands fa-square-github fa-2x"></i>
+              <i class="fa-brands fa-square-instagram fa-2x"></i>
+              <i class="fa-solid fa-envelope fa-2x"></i>
+            </div>
+          </div>
         </div>
       </div>
     </>
