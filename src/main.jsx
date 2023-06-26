@@ -7,6 +7,7 @@ import Home from "./routes/home.jsx";
 import Works from "./routes/works.jsx";
 import About from "./routes/about.jsx";
 import Contact from "./routes/contact.jsx";
+import "./index.css";
 
 const router = createBrowserRouter([
   {

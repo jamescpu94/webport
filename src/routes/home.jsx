@@ -7,7 +7,7 @@ export default function Home() {
       <div
         className="d-flex align-items-center justify-content-center text-center vh-100"
         style={{
-          backgroundImage: 'url("./src/routes/bg-james.jpg")',
+          backgroundImage: 'url("./src/assets/bg-james.jpg")',
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -15,10 +15,31 @@ export default function Home() {
         <div style={{ color: "white" }}>
           <h2>Hello, I'm</h2>
           <h1>James Udani</h1>
-          <NavLink to="/about" className="nav-link">
-            Read more
+          <NavLink
+            type="button"
+            className="btn btn-outline-light d-inline-flex align-items-center"
+            to="/works"
+          >
+            Read more&nbsp;<i class="fa-solid fa-arrow-right"></i>
           </NavLink>
         </div>
+      </div>
+      <div className="container text-center">
+        <PageTitle title="Works" />
+        <div className="row">
+          <div className="col">1 project</div>
+
+          <div className="col">1 project</div>
+
+          <div className="col">1 project</div>
+        </div>
+        <NavLink
+          type="button"
+          className="btn btn-outline-dark d-inline-flex align-items-center"
+          to="/works"
+        >
+          View All Work&nbsp;<i class="fa-solid fa-arrow-right"></i>
+        </NavLink>
       </div>
     </>
   );

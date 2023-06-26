@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <>
       <PageTitle title="Contact" />
-      <div class="container mt-5">
+      <div class="container">
         <div class="row">
           <div class="col-8">
             <h2>Get in touch</h2>
