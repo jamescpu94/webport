@@ -27,7 +27,7 @@ export default function Footer() {
           <SocialList />
         </div>
         <div class="col">
-          <h2>Socialsss</h2>
+          <h2>Technologies</h2>
         </div>
       </div>
     </div>
