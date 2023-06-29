@@ -2,7 +2,7 @@ import { NavLink, Link } from "react-router-dom";
 
 export default function NavBarTop() {
   return (
-    <nav class=" navbar navbar-expand-lg bg-body-tertiary ">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
       <div class="container">
         <Link className="navbar-brand" to="/">
           Jamescpu
@@ -34,7 +34,7 @@ export default function NavBarTop() {
               aria-label="Close"
             ></button>
           </div>
-          <div class="offcanvas-body">
+          <div class="offcanvas-body" id="topNav">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li className="nav-item">
                 <NavLink to="/" className="nav-link">

@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import PageTitle from "../components/page-title";
-
+import CustomCard from "../components/c-card";
 export default function Home() {
   return (
     <>
@@ -24,21 +24,20 @@ export default function Home() {
           </NavLink>
         </div>
       </div>
-      <div className="container text-center">
+      <div className="container d-flex flex-column align-items-center">
         <PageTitle title="Works" />
-        <div className="row">
-          <div className="col">1 project</div>
-
-          <div className="col">1 project</div>
-
-          <div className="col">1 project</div>
+        <div className="row mb-3">
+          <CustomCard />
+          <CustomCard />
+          <CustomCard />
+          <CustomCard />
         </div>
         <NavLink
           type="button"
           className="btn btn-outline-dark d-inline-flex align-items-center"
           to="/works"
         >
-          View All Work&nbsp;<i class="fa-solid fa-arrow-right"></i>
+          View All Works&nbsp;<i class="fa-solid fa-arrow-right"></i>
         </NavLink>
       </div>
     </>

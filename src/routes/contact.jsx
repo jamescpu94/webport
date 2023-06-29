@@ -3,7 +3,7 @@ import SocialList from "../components/social-list";
 
 export default function Contact() {
   return (
-    <>
+    <div className="container" style={{ minHeight: "50vh" }}>
       <PageTitle title="Contact" />
       <div class="container">
         <div class="row">
@@ -59,6 +59,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

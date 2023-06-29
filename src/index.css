@@ -22,6 +22,7 @@
 a {
   text-decoration: none;
 }
+#topNav li a.active,
 #navigator li a.active {
   color: black;
   text-decoration: underline;
@@ -42,4 +43,18 @@ ul li {
 }
 ul {
   padding: 0px;
+}
+
+.c-card img {
+  width: 100%;
+}
+.c-card {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 20px;
 }
