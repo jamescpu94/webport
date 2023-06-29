@@ -1,8 +1,9 @@
 import PageTitle from "../components/page-title";
+import SocialList from "../components/social-list";
 
 export default function Contact() {
   return (
-    <>
+    <div className="container" style={{ minHeight: "50vh" }}>
       <PageTitle title="Contact" />
       <div class="container">
         <div class="row">
@@ -52,17 +53,12 @@ export default function Contact() {
               Send
             </button>
           </div>
-          <div class="col">
-            <h1>Others</h1>
-            <div>
-              <i class="fa-brands fa-linkedin fa-2x"></i>
-              <i class="fa-brands fa-square-github fa-2x"></i>
-              <i class="fa-brands fa-square-instagram fa-2x"></i>
-              <i class="fa-solid fa-envelope fa-2x"></i>
-            </div>
+          <div class="col" id="contact-sociallist">
+            <h1>Social</h1>
+            <SocialList />
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

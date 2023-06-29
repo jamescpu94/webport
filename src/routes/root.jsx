@@ -6,10 +6,13 @@ export default function Root() {
   return (
     <>
       <NavBarTop />
-      <div id="detail" className="container-fluid p-0">
+
+      <div id="detail" className="container-fluid px-0">
         <Outlet />
       </div>
-      <Footer />
+      <div className="mt-5" style={{ backgroundColor: "gray" }}>
+        <Footer />
+      </div>
     </>
   );
 }
