@@ -9,36 +9,39 @@ import About from "./routes/about.jsx";
 import Contact from "./routes/contact.jsx";
 import "./index.css";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Root />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        errorElement: <ErrorPage />,
-        children: [
-          {
-            path: "/",
-            element: <Home />,
-          },
-          {
-            path: "/works",
-            element: <Works />,
-          },
-          {
-            path: "/about",
-            element: <About />,
-          },
-          {
-            path: "/contact",
-            element: <Contact />,
-          },
-        ],
-      },
-    ],
-  },
-]);
+const router = createBrowserRouter({
+  basename: "/webport",
+  routeConfig: [
+    {
+      path: "/",
+      element: <Root />,
+      errorElement: <ErrorPage />,
+      children: [
+        {
+          errorElement: <ErrorPage />,
+          children: [
+            {
+              path: "/",
+              element: <Home />,
+            },
+            {
+              path: "/works",
+              element: <Works />,
+            },
+            {
+              path: "/about",
+              element: <About />,
+            },
+            {
+              path: "/contact",
+              element: <Contact />,
+            },
+          ],
+        },
+      ],
+    },
+  ],
+});
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
