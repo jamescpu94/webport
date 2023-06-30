@@ -28,6 +28,7 @@ export default function Footer() {
         </div>
         <div class="col">
           <h2>Technologies</h2>
+          <p>fd</p>
         </div>
       </div>
     </div>
