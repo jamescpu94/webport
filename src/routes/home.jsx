@@ -30,7 +30,6 @@ export default function Home() {
           <CustomCard />
           <CustomCard />
           <CustomCard />
-          <CustomCard />
         </div>
         <NavLink
           type="button"
