@@ -10,33 +10,28 @@ import Contact from "./routes/contact.jsx";
 import "./index.css";
 
 const router = createBrowserRouter({
-  basename: "/webport",
-  routeConfig: [
+  path: "/",
+  element: <Root />,
+  errorElement: <ErrorPage />,
+  children: [
     {
-      path: "/",
-      element: <Root />,
       errorElement: <ErrorPage />,
       children: [
         {
-          errorElement: <ErrorPage />,
-          children: [
-            {
-              path: "/",
-              element: <Home />,
-            },
-            {
-              path: "/works",
-              element: <Works />,
-            },
-            {
-              path: "/about",
-              element: <About />,
-            },
-            {
-              path: "/contact",
-              element: <Contact />,
-            },
-          ],
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/works",
+          element: <Works />,
+        },
+        {
+          path: "/about",
+          element: <About />,
+        },
+        {
+          path: "/contact",
+          element: <Contact />,
         },
       ],
     },
